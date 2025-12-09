@@ -32,6 +32,7 @@
         justify-content: center;
         gap: 15px;
         margin-top: 15px;
+        flex-wrap: wrap;
     }
 
     nav a {
@@ -48,6 +49,16 @@
     nav a:hover {
         background-color: #3a3a3a;
         transform: scale(1.05);
+    }
+
+    .recode-badge {
+        background-color: #ff3366;
+        color: white;
+        padding: 3px 8px;
+        border-radius: 4px;
+        font-size: 0.7em;
+        margin-left: 5px;
+        vertical-align: middle;
     }
 
     section {
@@ -91,6 +102,7 @@
         display: flex;
         gap: 15px;
         margin-bottom: 20px;
+        flex-wrap: wrap;
     }
 
     .buttons a {
@@ -106,6 +118,58 @@
     .buttons a:hover {
         background-color: #e600a6;
         transform: scale(1.05);
+    }
+
+    .version-switcher {
+        background-color: #333333;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid #9933ff;
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    .version-switcher h3 {
+        color: #fc03ba;
+        margin-bottom: 15px;
+    }
+
+    .version-card {
+        background-color: #2a2a2a;
+        border: 1px solid #9933ff;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 15px 0;
+        transition: transform 0.2s;
+    }
+
+    .version-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .version-card h4 {
+        color: #fc03ba;
+        margin: 0 0 10px 0;
+    }
+
+    .version-card p {
+        margin: 0 0 15px 0;
+        font-size: 0.9em;
+    }
+
+    .version-link {
+        display: inline-block;
+        background-color: #ff3366;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background 0.2s;
+    }
+
+    .version-link:hover {
+        background-color: #ff0044;
     }
 
     .changelog {
@@ -144,7 +208,9 @@
         <h1>Expensive Client Unofficial</h1>
         <nav>
             <a href="#about">О чите</a>
+            <a href="#versions">Версии</a>
             <a href="#changelog">Changelog</a>
+            <a href="recode.html">Recode версия<span class="recode-badge">NEW</span></a>
         </nav>
     </header>
 
@@ -154,24 +220,47 @@
         
         <div class="version-info">
             <p><strong>Текущая версия:</strong> 3.2.3 Unofficial</p>
+            <p><strong>Recode версия:</strong> 4.0.0 Alpha</p>
             <p><strong>Последнее обновление:</strong> 08.12.2025</p>
         </div>
         
         <div class="buttons">
             <a href="https://t.me/demidcheats" target="_blank">Наш Telegram</a>
+            <a href="recode.html">Перейти к Recode версии</a>
+        </div>
+    </section>
+
+    <section id="versions">
+        <h2>Доступные версии</h2>
+        
+        <div class="version-switcher">
+            <h3>Выберите версию клиента</h3>
+            
+            <div class="version-card">
+                <h4>Expensive Client Unofficial 3.2.3</h4>
+                <p>Стабильная версия с проверенными функциями и исправлениями</p>
+                <a href="#download" class="version-link">Скачать 3.2.3</a>
+            </div>
+            
+            <div class="version-card">
+                <h4>Expensive Client Recode 4.0.0 Alpha</h4>
+                <p>Полностью переписанный клиент с новым интерфейсом и функциями</p>
+                <a href="recode.html" class="version-link">Перейти к Recode</a>
+            </div>
         </div>
     </section>
 
     <section id="download">
         <h2>Скачать</h2>
-        <p>Нажмите на кнопку ниже, чтобы скачать последнюю версию Expensive Client Unofficial:</p>
+        <p>Нажмите на кнопку ниже, чтобы скачать последнюю стабильную версию Expensive Client Unofficial:</p>
         <div class="buttons">
-            <a href="https://workupload.com/file/bYaLvhmPgUx" target="_blank">Скачать последнюю версию</a>
+            <a href="https://workupload.com/file/bYaLvhmPgUx" target="_blank">Скачать версию 3.2.3</a>
+            <a href="recode.html">Скачать Recode версию</a>
         </div>
     </section>
 
     <section id="changelog">
-        <h2>Changelog</h2>
+        <h2>Changelog (3.2.3)</h2>
         <div class="changelog">
             <ul>
                 <li>[+] Killaura - Добавлены моды Spookytime, ReallyWorld, Intave Test</li>
