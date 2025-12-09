@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expensive Client Recode</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    body {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        background-color: #1f1f1f;
+        color: #e0e0e0;
+    }
+
+    header {
+        background-color: #2a2a2a;
+        padding: 30px 20px;
+        text-align: center;
+        border-bottom: 2px solid #00ff88;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+        color: #00ff88;
+        margin: 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 15px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #00ff88;
+        font-weight: 700;
+        padding: 10px 20px;
+        border-radius: 6px;
+        background-color: #2a2a2a;
+        border: 1px solid #00ff88;
+        transition: background 0.2s, transform 0.2s;
+    }
+
+    nav a:hover {
+        background-color: #3a3a3a;
+        transform: scale(1.05);
+    }
+
+    section {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 25px 20px;
+        background-color: #2a2a2a;
+        border-radius: 12px;
+        border: 1px solid #00ff88;
+    }
+
+    h2 {
+        color: #00ff88;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #00ff88;
+        padding-bottom: 5px;
+    }
+
+    p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .version-info {
+        background-color: #333333;
+        padding: 15px;
+        border-radius: 8px;
+        margin: 20px 0;
+        border: 1px solid #00ff88;
+    }
+
+    .version-info p {
+        margin: 8px 0;
+    }
+
+    .version-info strong {
+        color: #00ff88;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+    }
+
+    .buttons a {
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-weight: 700;
+        color: #1f1f1f;
+        background-color: #00ff88;
+        transition: background 0.2s, transform 0.2s;
+    }
+
+    .buttons a:hover {
+        background-color: #00cc6a;
+        transform: scale(1.05);
+    }
+
+    .changelog {
+        background-color: #333333;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid #00ff88;
+    }
+
+    .changelog ul {
+        padding-left: 20px;
+    }
+
+    .changelog li::before {
+        content: "• ";
+        color: #00ff88;
+        font-weight: bold;
+    }
+
+    footer {
+        text-align: center;
+        padding: 25px;
+        background-color: #2a2a2a;
+        border-top: 2px solid #00ff88;
+    }
+
+    footer a {
+        color: #00ff88;
+        text-decoration: underline;
+        font-weight: 700;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Expensive Client Recode</h1>
+        <nav>
+            <a href="index.html">← На главную</a>
+            <a href="#about">О Recode</a>
+            <a href="#download">Скачать</a>
+            <a href="#changelog">Changelog</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>О Recode версии</h2>
+        <p>Expensive Client Recode — это полностью переписанная с нуля версия клиента с современной архитектурой и улучшенной производительностью.</p>
+        
+        <div class="version-info">
+            <p><strong>Текущая версия:</strong> 4.0.0 Alpha</p>
+            <p><strong>Статус:</strong> В разработке</p>
+            <p><strong>Последнее обновление:</strong> 08.12.2025</p>
+        </div>
+    </section>
+
+    <section id="download">
+        <h2>Скачать Recode</h2>
+        <p>Нажмите на кнопку ниже, чтобы скачать Recode версию:</p>
+        <div class="buttons">
+            <a href="https://workupload.com/file/bYaLvhmPgUx" target="_blank">Скачать Recode</a>
+            <a href="https://t.me/demidcheats" target="_blank">Telegram</a>
+        </div>
+    </section>
+
+    <section id="changelog">
+        <h2>Changelog Recode</h2>
+        <div class="changelog">
+            <ul>
+                <li>Здесь будет changelog для Recode версии</li>
+                <li>Добавьте свои изменения</li>
+                <li>Или оставьте так</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Expensive Client Recode. <br>
+        <a href="index.html">Вернуться на главную</a>
+    </footer>
+</body>
+</html>
